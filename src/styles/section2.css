@@ -1,0 +1,472 @@
+#section2 {
+  /* background-image: url("https://i.ibb.co/D41RMtX/390017-beautiful-4k-anime-wallpaper-3840x2160-samsung-galaxy.jpg"); */
+  /* background: #f1f1f1; */
+  /* background-image: url("https://i.ibb.co/dprMmbH/g3.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.mal-header {
+  background-image: url("https://i.ibb.co/dprMmbH/g3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: 300px;
+  width: 100%;
+  font-family: "Orbitron";
+  font-size: 2.6em;
+  color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -webkit-user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transform: translateX(100%); */
+}
+
+#anime-color-swapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: transform 200ms ease-in-out;
+}
+.blue-anime {
+  color: #00bcd4;
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+.pink-anime {
+  color: #ff4081;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+#absolute-anime-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  /* background-color: rgb(68, 68, 68); */
+  transform: translateX(-100%);
+  transition: all 200ms ease-in-out;
+  font-family: "Roboto";
+}
+.anime-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+}
+.anime-info,
+.anime-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 400px;
+  margin-top: 20px;
+}
+.anime-info {
+  margin-left: 0.7em;
+}
+.anime-ratings {
+  text-align: end;
+  margin-right: 0.7em;
+}
+
+.anime-desc-main {
+  flex: 1;
+  width: 100%;
+  font-family: "Orbitron";
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  align-self: center;
+  /* height: 100%; */
+  text-align: center;
+}
+.anime-desc-main h5 {
+  color: #ff4081;
+}
+
+.anime-info {
+  text-align: start;
+}
+.rating-heading {
+  text-align: end;
+}
+
+.info-heading,
+.rating-heading {
+  font-size: 1.2em;
+  padding-bottom: 0.1em;
+  border-bottom: #ff4081 0.1em solid;
+}
+
+.anime-details ul {
+  margin-top: 10px;
+}
+
+.anime-details li {
+  margin-top: 8px;
+  font-size: 0.5em;
+  list-style-type: none;
+  font-weight: normal;
+}
+
+@media (max-width: 1800px) {
+  .mal-header {
+    font-size: 2em;
+  }
+  .anime-info,
+  .anime-ratings {
+    width: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 1500px) {
+  .mal-header {
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 1200px) {
+  .mal-header {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 1000px) {
+  .mal-header {
+    font-size: 1.4em;
+  }
+  .anime-info,
+  .anime-ratings {
+    width: 250px;
+  }
+}
+@media (max-width: 900px) {
+  .mal-header {
+    font-size: 1em;
+  }
+  .anime-info,
+  .anime-ratings {
+    width: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .mal-header {
+    font-size: 0.7em;
+  }
+  .anime-info,
+  .anime-ratings {
+    width: 100px;
+  }
+}
+
+/* ================ MAIN LAYOUT ================== */
+.main-carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  /* opacity: 0; */
+}
+
+.carousel-header {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100px;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-color: bisque;
+}
+
+.carousel-container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 348px;
+  overflow: hidden;
+  transition: all 200ms ease;
+  background-color: #444444;
+  /* box-shadow: inset 0px 0px 16px -3px rgba(0, 0, 0, 0.75); */
+}
+
+.carousel-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: inset -44px 0px 17px -24px #444444,
+    inset 44px 0px 17px -24px #444444;
+  -moz-box-shadow: inset -44px 0px 17px -24px #444444,
+    inset 44px 0px 17px -24px #444444;
+  box-shadow: inset -44px 0px 17px -24px #444444,
+    inset 44px 0px 17px -24px #444444;
+  pointer-events: none;
+}
+
+/* ================ ABOVE CAROUSEL ================== */
+
+.button-swap {
+  height: 36px;
+  align-self: center;
+}
+.mal-username-form {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.spin-me {
+  transition: all 200ms ease;
+  width: 150px;
+}
+
+.reset-btn {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 200ms ease;
+  z-index: 0;
+  pointer-events: none;
+  display: none;
+  width: 150px;
+}
+
+.mal-form {
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 40px;
+  align-self: center;
+}
+
+.update-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.display-winner {
+  text-decoration: none;
+  color: #444444;
+  font-size: 1.4em;
+  align-self: center;
+  opacity: 0;
+  transition: all 200ms ease;
+  font-family: "Oswald";
+  -webkit-user-select: none;
+  transform: translateY(-50px);
+  z-index: 1;
+  /* border-bottom: 2px #444444 solid; */
+  pointer-events: none;
+  display: none;
+}
+
+.display-winner::after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px #ff4081 solid;
+  transition: all 200ms ease-in-out;
+  pointer-events: none;
+  transform: scaleX(0);
+}
+.display-winner:hover::after {
+  transform: scaleX(1);
+}
+/* ================= ARROW ================= */
+.arrow {
+  position: absolute;
+  top: -10px;
+  background-color: rgb(255, 64, 129);
+  height: 400px;
+  width: 3px;
+  left: 50%;
+  z-index: 2;
+  transition: transform 500ms ease-out;
+  pointer-events: none;
+  transform: scaleY(0);
+}
+
+.carousel {
+  display: flex;
+  height: 100%;
+  transform: translateX(-100px);
+}
+
+/* ================= ELEMENTS INSIDE CAROUSEL ================= */
+/*v containers containining images v*/
+.carousel > * {
+  display: flex;
+  height: 100%;
+}
+
+.each-image {
+  width: 210px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 2px solid white;
+  -webkit-user-select: none;
+  /* border-radius: 5px; */
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+}
+.anime-quickdesc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.anime-quickdesc a {
+  text-decoration: none;
+  color: #444444;
+}
+.anime-quickdesc a:hover {
+  text-decoration: underline;
+}
+
+.error-message-container {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  color: #f1f1f1;
+}
+.error-header {
+  font-size: 44px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.error-subheading {
+  font-size: 22px;
+  font-weight: normal;
+}
+.contact-dialog-msg > span {
+  font-weight: bold;
+}
+.contact-dialog-msg > span > span {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.top-toolbar {
+  flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  background-color: #e8e8e8;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.toolbar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolbar-right {
+  display: flex;
+  align-items: center;
+}
+.toolbar-right > div {
+  background: none !important;
+  box-shadow: none !important;
+}
+.toolbar-right > div:nth-child(2) {
+  height: 36px;
+}
+
+.bottom-toolbar {
+  height: 56px;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-right: 5px; */
+  flex-direction: row;
+}
+
+#play-icon {
+  display: flex;
+  align-items: center;
+  color: #222222;
+  text-decoration: none;
+}
+#play-icon img {
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+@media (max-width: 588px) {
+  .top-toolbar {
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .toolbar-right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .toolbar-left {
+    width: 100%;
+  }
+  .mal-username-form {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .mal-header {
+    min-height: 200px;
+  }
+  .toolbar-right > div:last-child {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+  }
+  .display-winner {
+    margin-bottom: 50px;
+    align-self: center;
+  }
+}
