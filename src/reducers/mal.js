@@ -12,7 +12,7 @@ const initState = {
     error: false
   },
   errorMessage: "",
-  currentUser: "moonbox",
+  currentUser: "moreez",
   currentAnime: {}
 };
 
