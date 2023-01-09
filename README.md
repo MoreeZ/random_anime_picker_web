@@ -1,6 +1,6 @@
 # Random anime picker
 
-## Now working
+## Not working
 
 Currently out of use. The REST API named Jikan API which this project has used has deprecated their getUserAnime endpoints. This means that the main funcitonality of this app has been completely disabled.
 
