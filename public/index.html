@@ -1,38 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Random Anime Picker</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 5.3.3"/><style data-href="/styles.ac3d792afe269e9f1e58.css" data-identity="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap);*{box-sizing:border-box;margin:0;padding:0}body{font-family:Roboto,Open Sans,Oswald}.section{background-attachment:fixed;background-repeat:no-repeat;background-size:cover;width:100%}.loading-container{align-items:center;display:flex;height:100%;justify-content:center;width:100%}.bold{font-weight:700}.pink{color:#ff4081}.input-form-container{align-items:center;display:flex;flex-direction:column;justify-content:flex-start;min-height:500px;padding:30px}.input-form-container h1{color:#e8e8e8;font-family:Orbitron,sans-serif;font-size:3.5em;font-weight:300;margin-top:50px;padding:10px;text-align:center;text-shadow:0 0 5px rbga(0,0,0,.7)}.input-form-container h1 .primary-color{color:#49b8d4}.input-form-container h2{color:#ccc;font-family:Orbitron,sans-serif;font-size:1.4em;font-weight:300;margin-bottom:50px;max-width:700px;padding:10px;text-align:center;text-shadow:0 0 5px rbga(0,0,0,.7)}.input-form-container .input-form{align-items:center;background-color:rgba(0,0,0,.7);border-radius:20px;color:#fff;display:flex;flex-direction:column;font-family:Roboto,sans-serif;justify-content:center;min-width:400px;padding:40px}.input-form-container .input-form h3{font-weight:300;margin-bottom:1.5em}.input-form-container .input-form .input-pair{align-items:center;display:flex;justify-content:space-between;margin-bottom:1.5em;width:100%}.input-form-container .input-form .input-pair label{display:flex;flex-wrap:nowrap;margin-right:1em}.input-form-container .input-form input,.input-form-container .input-form select{border:1px solid #ccc;border-radius:4px;font-size:16px;padding:.8em}.input-form-container .input-form button{background-color:#46cfe2;border:none;border-radius:4px;color:#fff;cursor:pointer;font-size:16px;font-weight:300;margin-bottom:1.5em;padding:.8em;width:100%}.input-form-container .input-form button:hover{background-color:#49b8d4}.input-form-container .input-form button:active{background-color:#2ea6c5}.info-icon{cursor:pointer;height:18px;position:relative;width:18px}.info-icon .info-icon__tooltip{background-color:#fff;border:1px solid #ccc;border-radius:4px;color:#333;display:none;font-size:13px;min-width:200px;padding:5px;position:absolute;top:calc(100% + 2px);z-index:1}.info-icon:hover .info-icon__tooltip{display:block}</style><title data-gatsby-head="true">Random Anime Picker</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><main><div style="position:relative" class="input-form-container"><h1>Random <span class="primary-color">Anime</span> Picker</h1><h2>This app uses anime from your MyAnimeList account to decide what anime you should watch next.</h2><form class="input-form"><div class="input-pair"><label>MAL Username  <div class="info-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" class="svg-inline--fa fa-circle-info " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" font-size="18"><path fill="currentColor" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"></path></svg><span class="info-icon__tooltip">Please enter your MyAnimeList account name. This app uses the anime information from you MyAnimeList account.</span></div></label><input type="text" name="username" placeholder="Your MAL Username" value=""/></div><div class="input-pair"><label>List  <div class="info-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" class="svg-inline--fa fa-circle-info " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" font-size="18"><path fill="currentColor" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"></path></svg><span class="info-icon__tooltip">Each anime you add to your MyAnimeList list has a status. eg. Plan to watch will get only roll anime with the status &#x27;Plan to watch&#x27;</span></div></label><select name="status"><option value="Plan to watch" selected="">Plan to watch</option><option value="Currently Watching">Currently Watching</option><option value="Completed">Completed</option><option value="On Hold">On Hold</option><option value="Dropped">Dropped</option></select></div><button type="submit" class="confirm-button">Confirm</button></form><div class=" gatsby-image-wrapper" style="position:absolute;overflow:hidden;top:0;left:0;width:100%;height:100%;z-index:-1"><div aria-hidden="true" style="width:100%;padding-bottom:56.25%"></div><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHOEkQqD//EABoQAAICAwAAAAAAAAAAAAAAAAECABIQEzL/2gAIAQEAAQUCQbGaqm5idNj/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAABBQAAAAAAAAAAAAAAAAAAAREgIlH/2gAIAQEABj8CV8Kx/8QAGhABAQACAwAAAAAAAAAAAAAAAQAxcSFRsf/aAAgBAQABPyEcDQxXOrvfLHqJN//aAAwDAQACAAMAAAAQY8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAdEAEAAgICAwAAAAAAAAAAAAABABEhUUFhgbHR/9oACAEBAAE/EMiKJKNJEAtRBdD5i+VXo+Jqc/cvXRADP//Z" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/014f58dea68be4bc25b925bf80ced705/9104c/bg.jpg 480w,
+/static/014f58dea68be4bc25b925bf80ced705/a6352/bg.jpg 960w,
+/static/014f58dea68be4bc25b925bf80ced705/d8255/bg.jpg 1920w,
+/static/014f58dea68be4bc25b925bf80ced705/af56c/bg.jpg 2880w,
+/static/014f58dea68be4bc25b925bf80ced705/27fce/bg.jpg 3840w" sizes="(max-width: 1920px) 100vw, 1920px" /><img loading="lazy" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/static/014f58dea68be4bc25b925bf80ced705/9104c/bg.jpg 480w,
+/static/014f58dea68be4bc25b925bf80ced705/a6352/bg.jpg 960w,
+/static/014f58dea68be4bc25b925bf80ced705/d8255/bg.jpg 1920w,
+/static/014f58dea68be4bc25b925bf80ced705/af56c/bg.jpg 2880w,
+/static/014f58dea68be4bc25b925bf80ced705/27fce/bg.jpg 3840w" src="/static/014f58dea68be4bc25b925bf80ced705/d8255/bg.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></div><div><h3>Not working</h3><p> <!-- -->Currently out of use. The REST API named Jikan API which this project has used has deprecated their getUserAnime endpoints. This means that the main funcitonality of this app has been completely disabled.</p><h3>Current situation.</h3><p>Currently I got rid of the old source code as it was extremely outdated.</p><p>I created a new Gastby app and started implementing new design to the app.</p><h3>The plan</h3><p>By the end of February I will launch a new version of this app which will communicate with my cloud server to authenticate users with the official MAL API. For now the app is dead.</p></div></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-ed8bbe3f1504622c9ae2.js\"],\"component---src-pages-404-tsx\":[\"/component---src-pages-404-tsx-b372b44c369da7340648.js\"],\"component---src-pages-index-tsx\":[\"/component---src-pages-index-tsx-11457429f9a52a35d985.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="cf9fd1894e38fb967198";</script><script src="/webpack-runtime-ca2b15bdf32f6bc03e75.js" async></script><script src="/framework-c744136bcdbbc2b88185.js" async></script><script src="/app-ed8bbe3f1504622c9ae2.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

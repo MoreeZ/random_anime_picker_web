@@ -1,0 +1,24 @@
+.info-icon {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+
+  .info-icon__tooltip {
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+    font-size: 13px;
+    min-width: 200px;
+  }
+}
+
+.info-icon:hover .info-icon__tooltip {
+  display: block;
+}
